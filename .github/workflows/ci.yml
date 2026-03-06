@@ -50,7 +50,7 @@ jobs:
 
     - name: Upload Coverage Reports
       if: always()
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: coverage-reports-backend
         path: |
@@ -100,7 +100,7 @@ jobs:
       uses: actions/checkout@v6
 
     - name: Download Coverage Reports
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v8
       with:
         name: coverage-reports-backend
         path: api/coverage/
