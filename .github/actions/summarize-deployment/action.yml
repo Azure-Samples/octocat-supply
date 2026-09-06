@@ -52,7 +52,7 @@ runs:
   steps:
     - name: Extract Deployment Outputs and Generate Summary
       id: extract
-      uses: actions/github-script@v7
+      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
       env:
         DEPLOYMENT_OUTPUTS_FILE: ${{ inputs.deployment-outputs-file }}
         API_IMAGE: ${{ inputs.api-image }}
