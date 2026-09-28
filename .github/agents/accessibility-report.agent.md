@@ -1,7 +1,7 @@
 ---
 name: accessibility-report
 disable-model-invocation: false
-model: ['Claude Sonnet 4.5', 'GPT-5.2']
+model: ['Claude Opus 5.5', 'GPT-6 Astra']
 
 # Subagents that will be invoked for report generation
 agents: ['html-expert', 'markdown-expert']
@@ -10,14 +10,14 @@ description: Expert in web accessibility (WCAG 2.1/2.2), inclusive UX, a11y test
 argument-hint: Just ask for an accessibility audit report on your web application. 
 
 # Tools available to this agent for analysis and report generation
-tools: ['agent', 'search/changes', 'search/codebase', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'vscode/extensions', 'web/fetch', 'read/readFile', 'execute/runInTerminal', 'execute/runTask', 'execute/runTests', 'search', 'search/searchResults', 'read/terminalLastCommand', 'read/terminalSelection']
+tools: ['agent', 'search/codebase', 'edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'vscode/extensions', 'web/fetch', 'read/readFile', 'execute/runInTerminal', 'execute/runTask', 'execute/runTests', 'search/searchSubagent', 'search/fileSearch', search/textSearch, 'search/usages']
 
 # Handoff actions users can trigger
 handoffs:
   - label: Top accessibility feature
     agent: agent
     prompt: Walkthrough the highest priority accessibility issue from the audit report. Explain the issue, the WCAG success criterion it violates, and the recommended fix in detail. Do not implement the fix yet, just explain it clearly.
-    model: 'Claude Opus 4.5'
+    model: 'Claude Sonnet 5.5'
     send: true
   - label: Create Accessibility Report
     agent: agent

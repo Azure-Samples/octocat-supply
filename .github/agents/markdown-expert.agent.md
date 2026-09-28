@@ -1,10 +1,10 @@
 ---
 name: markdown-expert
-user-invokable: false
-model: ['Claude Sonnet 4.5', 'GPT-5.2']
+user-invocable: false
+model: ['GPT-6 Luna (copilot)']
 description: Expert in generating professional, well-structured Markdown reports with clean formatting
 argument-hint: Provide the report data or structured content to transform into a professional Markdown report
-tools: ['edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search/fileSearch', 'search/listDirectory', 'execute/runInTerminal', 'execute/getTerminalOutput', 'read/readFile', 'agent/runSubagent', 'search/changes', 'search/searchResults', 'search/textSearch', 'web/fetch']
+tools: ['edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search/fileSearch', 'search/listDirectory', 'execute/runInTerminal', 'execute/getTerminalOutput', 'read/readFile', 'agent/runSubagent', 'search','search/textSearch', 'web/fetch']
 handoffs:
   - label: View Report
     agent: agent

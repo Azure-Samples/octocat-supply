@@ -1,9 +1,9 @@
 ---
 name: html-expert
-user-invokable: false
+user-invocable: false
 description: Expert in generating professional, accessible HTML reports with modern styling and interactive features
 argument-hint: Provide the report data or reference to markdown/data source to transform into HTML
-tools: ['edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search/fileSearch', 'search/listDirectory', 'execute/runInTerminal', 'execute/getTerminalOutput', 'read/readFile', 'agent/runSubagent', 'search/changes', 'search/searchResults', 'search/textSearch', 'web/fetch']
+tools: ['edit/createDirectory', 'edit/createFile', 'edit/editFiles', 'search/fileSearch', 'search/listDirectory', 'execute/runInTerminal', 'execute/getTerminalOutput', 'read/readFile', 'agent/runSubagent', 'search', 'search/textSearch', 'web/fetch']
 handoffs:
   - label: View in Browser
     agent: agent
