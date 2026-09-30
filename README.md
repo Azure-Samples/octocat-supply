@@ -71,7 +71,7 @@ erDiagram
    make dev
    ```
 
-This will start both the API server (on port 3000) and the frontend development server (on port 5173).
+This will start both the API server (on port 3000) and the frontend development server (on port 5137).
 
 ### Available Make Commands
 
