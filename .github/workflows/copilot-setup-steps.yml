@@ -15,10 +15,10 @@ jobs:
     # If you do not check out your code, Copilot will do this for you.
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: "24"
 
@@ -37,6 +37,6 @@ jobs:
         run: npx playwright install chromium msedge
 
       - name: Install gh-aw extension
-        uses: github/gh-aw/actions/setup-cli@v0.41.1
+        uses: github/gh-aw/actions/setup-cli@d47697b2bf91080b55fb9c6905576c36e061011a # v0.41.1
         with:
           version: v0.41.1
